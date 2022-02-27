@@ -8,7 +8,18 @@ function index(req, res) {
     })
   })
 }
+
+function show(req, res) {
+  skillsDb.findById(req.params.id, function(error, skill) {
+    res.render('skills/show', {
+      error: error,
+      skill: skill
+    })
+  })
+}
   
+
   export {
-    index
+    index,
+    show
   }

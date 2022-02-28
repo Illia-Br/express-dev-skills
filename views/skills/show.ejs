@@ -17,6 +17,11 @@
     <h3><%= skill.technology %> </h3>
     <p>Skill level: <%= skill.level %> </p>
   <% } %> 
+    
+    <form action="/skills/<%= skill._id%>?_method=DELETE" class="delete-form" method="post">
+      <button type="submit">Delete this Skill</button>
+    </form>
+
     <a href="/skills">Back to All Skills</a>
 
 </body>

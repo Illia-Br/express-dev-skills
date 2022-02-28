@@ -10,3 +10,7 @@ a {
 li {
   list-style: none;
 }
+
+.delete-form {
+  margin-bottom: 1%;
+}
